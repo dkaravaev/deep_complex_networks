@@ -12,8 +12,8 @@ import numpy as np
 from keras.layers import Layer, InputSpec
 from keras import initializers, regularizers, constraints
 import keras.backend as K
-from bn import ComplexBN as complex_normalization
-from bn import sqrt_init 
+from complexnn.bn import ComplexBN as complex_normalization
+from complexnn.bn import sqrt_init 
 
 def layernorm(x, axis, epsilon, gamma, beta):
     # assert self.built, 'Layer must be built before being called'
